@@ -12,13 +12,12 @@ var core_1 = require('@angular/core');
 var product_list_component_1 = require('./products/product-list.component');
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = 'Tour of Heroes';
-        this.hero = 'Windstorm';
+        this.pageTitle = 'Acme Product Management';
     }
     AppComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: " <pm-products></pm-products> ",
+            selector: 'pm-app',
+            template: "\n    <div><h1>{{pageTitle}}</h1>\n        <div>My First Component</div>\n    </div>\n    ",
             directives: [product_list_component_1.ProductListComponent]
         }), 
         __metadata('design:paramtypes', [])
