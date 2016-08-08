@@ -28,4 +28,11 @@ export class ProductListComponent {
             "imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
         }
     ];
+    imagewidth:number=50;
+    imageMargin:number=2;
+    showImage: boolean=false;
+    listFilter: string='cart';
+    toggleImage(): void {
+        this.showImage= !this.showImage;
+    }
 }

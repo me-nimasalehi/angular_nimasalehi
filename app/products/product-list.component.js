@@ -34,7 +34,14 @@ var ProductListComponent = (function () {
                 "imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
             }
         ];
+        this.imagewidth = 50;
+        this.imageMargin = 2;
+        this.showImage = false;
+        this.listFilter = 'cart';
     }
+    ProductListComponent.prototype.toggleImage = function () {
+        this.showImage = !this.showImage;
+    };
     ProductListComponent = __decorate([
         core_1.Component({
             selector: 'pm-products',
